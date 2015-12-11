@@ -10,7 +10,7 @@ module InsightsHelper
   fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
 }(window,document,'script'));"""
 
-    ga_access_token = GoogleService.new.access_token
+    ga_access_token = ::GoogleService.new.access_token
     ga_table_id = Rails.application.secrets.ga_table_id
 
     callback_script = """window.GA_TABLE_ID = '#{ga_table_id}';
