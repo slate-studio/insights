@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name     = 'insights'
   s.version  = Insights::VERSION
   s.platform = Gem::Platform::RUBY
-  s.authors  = ['Alexander Kravets']
+  s.authors  = ['Alexander Kravets', 'Maxym Melnyk']
   s.email    = 'alex@slatestudio.com'
   s.license  = 'MIT'
   s.homepage = 'https://github.com/slate-studio/insights'
@@ -17,6 +17,5 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ['lib']
 
-#  s.add_dependency("chr",        ">= 0.4.0")
-#  s.add_dependency("nokogiri")
+  s.add_dependency("google-api-client")
 end

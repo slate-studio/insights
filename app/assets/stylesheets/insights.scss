@@ -1,0 +1,36 @@
+$highlight-color: #ffffc0;
+
+.input-chart {
+  margin: 0 1em;
+
+  .google-visualization-table {
+    margin: 0.25em 0 1em;
+  }
+
+  .gapi-analytics-data-chart {
+    .google-visualization-table-table {
+      font-size: 0.9em;
+    }
+
+    .gapi-analytics-data-chart-styles-table-th {
+      border-color: $border-color;
+    }
+
+    .gapi-analytics-data-chart-styles-table-tr-odd {
+      background-color: $bg-color;
+    }
+
+    .gapi-analytics-data-chart-styles-table-tr-over {
+      background-color: $border-color;
+    }
+
+    .gapi-analytics-data-chart-styles-table-tr-sel {
+      background-color: $highlight-color;
+    }
+
+    .gapi-analytics-data-chart-styles-table-tr-even:last-child,
+    .gapi-analytics-data-chart-styles-table-tr-odd:last-child {
+      border-color: $border-color;
+    }
+  }
+}

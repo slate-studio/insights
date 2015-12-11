@@ -1,5 +1,5 @@
 module Insights
   class Engine < ::Rails::Engine
-    require 'insights/engine'
+    require "insights/engine"
   end
 end
